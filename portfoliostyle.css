@@ -110,3 +110,25 @@ figcaption {
 .setgreen:hover {
     color:39FF14;
 }
+
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.portfolio-content {
+    animation: slide-in 5s ease-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover
+    30%;
+    background-color: #0471A6;
+    margin-bottom: 10px;
+    padding: 50px;
+}
